@@ -4,474 +4,642 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Deliver X - Webflow Ecommerce website template</title>
-
+    <meta name="description" content="Skyrocket your delivery app with Deliver X, our delivery app Webflow Template designed for modern B2C food & groceries delivery apps looking to have a world-class website.">
+    
+    <!-- Favicon -->
+    <link href="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/620416c12c050b2c6989740d_favicon-delivery-template.svg" rel="shortcut icon" type="image/x-icon">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-
+    
+    <!-- Webflow CSS (Downloaded) -->
+    <link rel="stylesheet" href="css/deliver-template-styles.css">
+    
+    <!-- Custom SCSS compiled to CSS -->
+    <link rel="stylesheet" href="css/new-style.css">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg" alt="Deliver X Webflow Template - Logo" class="navbar-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Pages
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Features</a></li>
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <div class="d-flex gap-2">
-                    <a href="#" class="btn btn-secondary btn-sm">Download app</a>
-                    <a href="#" class="btn btn-primary btn-sm">Register</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section bg-neutral-200">
-        <div class="container">
-            <div class="row align-items-center hero-row">
-                <div class="col-lg-6 text-center text-lg-start">
-                    <div class="hero-content">
-                        <div class="section-badge mb-3">ABOUT DELIVER X</div>
-                        <h1 class="hero-title">We are here to help amazing restaurants get great customers</h1>
-                        <div class="inner-container-590 center-tablet mx-auto mx-lg-0">
-                            <p class="hero-description mb-0">At morbi adipiscing sit sed consectetur senectus Dignissim sed amet tincidunt vitae ultricies ultrices amet fermentum amet neque et id sed lacinia massa pretium aliquam <span class="text-no-wrap">libero et.</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image-wrapper position-relative">
-                        <!-- Main hero image -->
-                        <div class="hero-image">
-                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768f4ff084869c4a1c57_image-about-hero-delivery-template.png" loading="eager" alt="Help Amazing Restaurants With Great Customers - Deliver X Webflow Template" class="img-fluid main-image">
-                        </div>
-
-                        <!-- Floating card 1 -->
-                        <div class="floating-card-1">
-                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768e2b5f20a3847da6a8_image-1-card-about-hero-delivery-template.png" loading="eager" alt="Help Amazing Restaurants With Great Customers" class="img-fluid">
-                        </div>
-
-                        <!-- Floating card 2 -->
-                        <div class="floating-card-2">
-                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ecbdabafa33e57a7c_image-2-card-about-hero-delivery-template.svg" loading="eager" alt="Help Amazing Restaurants With Great Customers" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats Grid -->
-            <div class="stats-grid">
-                <div class="row text-center">
-                    <div class="col-6 col-lg-3">
-                        <div class="stat-item">
-                            <div class="stat-number">10M<span class="color-accent-1">+</span></div>
-                            <div class="stat-label">Happy customers</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="stat-item">
-                            <div class="stat-number">500k<span class="color-accent-1">+</span></div>
-                            <div class="stat-label">Restaurants available</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="stat-item">
-                            <div class="stat-number">30M<span class="color-accent-1">+</span></div>
-                            <div class="stat-label">Successful deliveries</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="stat-item">
-                            <div class="stat-number">99.9<span class="color-accent-1">%</span></div>
-                            <div class="stat-label">Customer satisfaction</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Story Section -->
-    <section class="story-section">
-        <div class="container">
-            <div class="row story-items">
-                <!-- Story Item 1: Started in 2016 -->
-                <div class="col-12">
-                    <div class="row align-items-center mb-5">
-                        <div class="col-lg-6 order-lg-2">
-                            <div class="story-image">
-                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768fa223098a9258964e_image-2-stoy-about-delivery-template.jpg" alt="Started Back In 2016 - Deliver X Webflow Template" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 order-lg-1">
-                            <div class="story-content">
-                                <div class="section-badge">ABOUT US</div>
-                                <h2 class="section-title">Our company started back <span class="text-no-wrap">in 2016</span></h2>
-                                <p class="section-description mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Story Item 2: Our Mission -->
-                <div class="col-12">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="story-content">
-                                <div class="section-badge">OUR MISSION</div>
-                                <h2 class="section-title">Our mission is to disrupt the <span class="text-no-wrap">food industry</span></h2>
-                                <div class="inner-container-480">
-                                    <p class="section-description mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut <span class="text-no-wrap">odit aut fugit.</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="story-image">
-                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ef5a81a9f9bf7b9e9_image-1-stoy-about-delivery-template.jpg" alt="Disrupt The Food Industry - Deliver X Webflow Template" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Journey Section -->
-    <section class="journey-section bg-neutral-200">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="journey-content sticky-content">
-                        <div class="inner-container-520">
-                            <div class="section-badge">OUR JOURNEY</div>
-                            <div class="inner-container-520-tablet">
-                                <div class="inner-container-400-mobile">
-                                    <h2 class="section-title">It has been a long but incredible journey</h2>
-                                </div>
-                            </div>
-                            <p class="section-description">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque <span class="text-no-wrap">ut quis.</span></p>
-                            <div class="buttons-row">
-                                <a href="#" class="btn btn-primary">Download app</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="card chronology">
-                                <div class="year-badge">2016</div>
-                                <h3 class="timeline-title">Deliver X was founded</h3>
-                                <p class="timeline-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo <span class="text-no-wrap">enim ipsam.</span></p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="card chronology">
-                                <div class="year-badge">2018</div>
-                                <h3 class="timeline-title">Raised Series A at $50M valuation</h3>
-                                <p class="timeline-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo <span class="text-no-wrap">enim ipsam.</span></p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="card chronology">
-                                <div class="year-badge">2019</div>
-                                <h3 class="timeline-title">Raised Series B at $600M valuation</h3>
-                                <p class="timeline-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo <span class="text-no-wrap">enim ipsam.</span></p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="card chronology">
-                                <div class="year-badge">2022</div>
-                                <h3 class="timeline-title">Raised Series C at $3B valuation</h3>
-                                <p class="timeline-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo <span class="text-no-wrap">enim ipsam.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="partners-section">
-        <div class="container">
-            <div class="text-center mb-5">
-                <div class="inner-container-700">
-                    <div class="section-badge">OUR PARTNERS</div>
-                    <h2 class="section-title">We don't walk alone, Deliver X works thanks to <span class="text-no-wrap">our partners</span></h2>
-                    <p class="section-description">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque <span class="text-no-wrap">ut quis.</span></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="partner-card text-center">
-                        <div class="partner-icon">
-                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b070212f9403ca3a97f_image-1-partners-delivery-template.svg" alt="Customers - Deliver X Webflow Template" class="partner-icon-img">
-                        </div>
-                        <h3 class="partner-title">Customers</h3>
-                        <p class="partner-description">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam <span class="text-no-wrap">sit nullam.</span></p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="partner-card text-center">
-                        <div class="partner-icon">
-                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b07238dadda77c03341_image-2-partners-delivery-template.svg" alt="Restaurants - Deliver X Webflow Template" class="partner-icon-img">
-                        </div>
-                        <h3 class="partner-title">Restaurants</h3>
-                        <p class="partner-description">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam <span class="text-no-wrap">sit nullam.</span></p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="partner-card text-center">
-                        <div class="partner-icon">
-                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b075b917b7d28e88cc8_image-3-partners-delivery-template.svg" alt="Riders - Deliver X Webflow Template" class="partner-icon-img">
-                        </div>
-                        <h3 class="partner-title">Riders</h3>
-                        <p class="partner-description">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam <span class="text-no-wrap">sit nullam.</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Press Section -->
-    <section class="press-section bg-neutral-200">
-        <div class="container">
-            <div class="inner-container-680-tablet text-center">
-                <div class="text-center mb-5">
-                    <div class="inner-container-620">
-                        <div class="section-badge">PRESS & NEWS</div>
-                        <h2 class="section-title">See what the press says about <span class="text-no-wrap">Deliver X</span></h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <a href="#" class="news-card card press link-content">
-                            <div class="news-logo mb-3">
-                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fab386a9117726aad8f_image-1-logo-press-delivery-template.svg" alt="What The Press Says About Our Company - Deliver X Webflow Template" class="img-fluid">
-                            </div>
-                            <h3 class="news-title">Deliver X raises $26M in series B funding <span class="text-no-wrap">for growth</span></h3>
-                            <div class="news-footer">
-                                <div class="news-link-wrapper">
-                                    <span class="news-link">Read more</span>
-                                    <svg class="news-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div class="news-date">January 22, 2023</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <a href="#" class="news-card card press link-content">
-                            <div class="news-logo mb-3">
-                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fac4a9181ff3e5b1fb1_image-3-logo-press-delivery-template.svg" alt="What The Press Says About Our Company - Deliver X Webflow Template" class="img-fluid">
-                            </div>
-                            <h3 class="news-title">Deliver X claims to be the #1 player in the delivery industry</h3>
-                            <div class="news-footer">
-                                <div class="news-link-wrapper">
-                                    <span class="news-link">Read more</span>
-                                    <svg class="news-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div class="news-date">Nov 15, 2022</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <a href="#" class="news-card card press link-content">
-                            <div class="news-logo mb-3">
-                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017facf5a81a3025f830c1_image-2-logo-press-delivery-template.svg" alt="What The Press Says About Our Company - Deliver X Webflow Template" class="img-fluid">
-                            </div>
-                            <h3 class="news-title">Introducing curbside ordering with <span class="text-no-wrap">Deliver X</span></h3>
-                            <div class="news-footer">
-                                <div class="news-link-wrapper">
-                                    <span class="news-link">Read more</span>
-                                    <svg class="news-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div class="news-date">Sep 18, 2022</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <a href="#" class="news-card card press link-content">
-                            <div class="news-logo mb-3">
-                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fab7168b306f912ea93_image-4-logo-press-delivery-template.svg" alt="What The Press Says About Our Company - Deliver X Webflow Template" class="img-fluid">
-                            </div>
-                            <h3 class="news-title">Introducing the Square POS integration with <span class="text-no-wrap">Deliver X</span></h3>
-                            <div class="news-footer">
-                                <div class="news-link-wrapper">
-                                    <span class="news-link">Read more</span>
-                                    <svg class="news-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div class="news-date">Mar 12, 2022</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <!-- Footer Top -->
-            <div class="footer-top">
-                <div class="row footer-logo-and-buttons">
-                    <div class="col-lg-6">
-                        <div class="footer-brand inner-container-450">
-                            <a href="#" class="footer-logo-wrapper">
-                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg" alt="Deliver X Webflow Template - Logo" class="footer-logo">
-                            </a>
-                            <p class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor <span class="text-no-wrap">incididunt ut.</span></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="download-buttons">
-                            <a href="https://www.apple.com/app-store/" target="_blank" class="download-btn">
-                                <div class="download-icon apple"></div>
-                                <div>Download for iOS</div>
-                            </a>
-                            <a href="https://play.google.com/" target="_blank" class="download-btn">
-                                <div class="download-icon android"></div>
-                                <div>Download for Android</div>
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+        
+        <!-- Header/Navigation -->
+        <header data-animation="default" data-collapse="medium" data-duration="400" role="banner" class="header-wrapper w-nav">
+            <div class="header-content">
+                <div class="container-default header w-container">
+                    <div class="header-content-wrapper">
+                        
+                        <!-- Logo -->
+                        <div class="header-left-side">
+                            <a href="/home" class="header-logo-link w-nav-brand">
+                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg" 
+                                     alt="Deliver X Webflow Template - Logo" 
+                                     class="header-logo">
                             </a>
                         </div>
+                        
+                        <!-- Navigation Menu -->
+                        <div class="header-right-side">
+                            <nav role="navigation" class="header-nav-menu-wrapper w-nav-menu">
+                                <ul role="list" class="header-nav-menu-list">
+                                    <li class="header-nav-list-item header">
+                                        <a href="/home" class="header-nav-link w-nav-link">Home</a>
+                                    </li>
+                                    <li class="header-nav-list-item header">
+                                        <a href="/about" aria-current="page" class="header-nav-link w-nav-link w--current">About</a>
+                                    </li>
+                                    <li class="header-nav-list-item header">
+                                        <a href="/plans" class="header-nav-link w-nav-link">Pricing</a>
+                                    </li>
+                                    <li class="header-nav-list-item header">
+                                        <div data-hover="true" data-delay="0" class="dropdown-wrapper w-dropdown">
+                                            <div class="header-nav-link dropdown w-dropdown-toggle">
+                                                <div>Pages</div>
+                                                <div class="line-rounded-icon dropdown-arrow"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-nav-list-item show-in-tablet-menu-header">
+                                        <a href="/plans" class="btn-primary width-100 w-button">Get started</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                            <!-- Header Buttons -->
+                            <div class="buttons-row header">
+                                <div class="btn-row-left header">
+                                    <a href="/download" class="btn-secondary small w-button">Download app</a>
+                                </div>
+                                <div class="btn-row-right">
+                                    <a href="/contact" class="btn-primary small w-button">Register</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Mobile Menu Toggle -->
+                            <div class="hamburger-menu-wrapper w-nav-button">
+                                <div class="hamburger-menu-bar top"></div>
+                                <div class="hamburger-menu-bar bottom"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Footer Middle -->
-            <div class="footer-middle">
-                <div class="row footer-nav-menu">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="inner-container-230">
-                            <h6 class="footer-title">Menu</h6>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="section hero _02 bg-neutral-200">
+            <div class="container-default w-container">
+                <div class="w-layout-grid grid-1-column gap-row-100px">
+                    
+                    <!-- Hero Content -->
+                    <div class="inner-container _680px-tablet center">
+                        <div class="w-layout-grid grid-2-columns hero-02">
+                            
+                            <!-- Hero Text -->
+                            <div class="text-center-tablet">
+                                <div class="mg-bottom-22px">
+                                    <div class="text-200 bold text-uppercase color-accent-1">About Deliver X</div>
+                                </div>
+                                <h1>We are here to help amazing restaurants get great customers</h1>
+                                <div class="inner-container _590px center-tablet">
+                                    <p class="mg-bottom-0">At morbi adipiscing sit sed consectetur senectus Dignissim sed amet tincidunt vitae ultricies ultrices amet fermentum amet neque et id sed lacinia massa pretium aliquam <span class="text-no-wrap">libero et.</span></p>
+                                </div>
+                            </div>
+                            
+                            <!-- Hero Image -->
+                            <div class="inner-container _500px-tablet center">
+                                <div class="position-relative">
+                                    <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768f4ff084869c4a1c57_image-about-hero-delivery-template.png" 
+                                         loading="eager" 
+                                         alt="Help Amazing Restaurants With Great Customers - Deliver X Webflow Template">
+                                    
+                                    <!-- Floating Card 1 -->
+                                    <div class="image-wrapper border-radius-16px hero-02-image-absolute-01">
+                                        <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768e2b5f20a3847da6a8_image-1-card-about-hero-delivery-template.png" 
+                                             loading="eager" 
+                                             alt="Help Amazing Restaurants With Great Customers - Deliver X Webflow Template" 
+                                             class="image cover">
+                                    </div>
+                                    
+                                    <!-- Floating Card 2 -->
+                                    <div class="image-wrapper border-radius-8px hero-02-image-absolute-02">
+                                        <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ecbdabafa33e57a7c_image-2-card-about-hero-delivery-template.svg" 
+                                             loading="eager" 
+                                             alt="Help Amazing Restaurants With Great Customers - Deliver X Webflow Template" 
+                                             class="image cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats Grid -->
+                    <div class="w-layout-grid grid-4-columns stats">
+                        <div class="text-center">
+                            <div class="mg-bottom-6px">
+                                <div class="display-2">10M<span class="color-accent-1">+</span></div>
+                            </div>
+                            <div class="text-200 medium">Happy customers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="mg-bottom-6px">
+                                <div class="display-2">500k<span class="color-accent-1">+</span></div>
+                            </div>
+                            <div class="text-200 medium">Restaurants available</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="mg-bottom-6px">
+                                <div class="display-2">30M<span class="color-accent-1">+</span></div>
+                            </div>
+                            <div class="text-200 medium">Successful deliveries</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="mg-bottom-6px">
+                                <div class="display-2">99.9<span class="color-accent-1">%</span></div>
+                            </div>
+                            <div class="text-200 medium">Customer satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Story Section -->
+        <section class="section _200px">
+            <div class="container-default w-container">
+                <div class="inner-container _680px-tablet center">
+                    <div class="w-layout-grid grid-1-column gap-row-100px story">
+                        
+                        <!-- Story Item 1: Started in 2016 -->
+                        <div class="w-layout-grid grid-2-columns text-right-default">
+                            <div class="image-wrapper border-radius-24px">
+                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768fa223098a9258964e_image-2-stoy-about-delivery-template.jpg" 
+                                     alt="Started Back In 2016 - Deliver X Webflow Template" 
+                                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 680px, (max-width: 1439px) 47vw, 597.71875px"
+                                     srcset="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768fa223098a9258964e_image-2-stoy-about-delivery-template-p-500.jpeg 500w, https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768fa223098a9258964e_image-2-stoy-about-delivery-template-p-800.jpeg 800w, https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768fa223098a9258964e_image-2-stoy-about-delivery-template-p-1080.jpeg 1080w, https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768fa223098a9258964e_image-2-stoy-about-delivery-template.jpg 1196w"
+                                     class="image cover">
+                            </div>
+                            <div class="inner-container _480px width-100-tablet">
+                                <div class="mg-bottom-12px">
+                                    <div class="text-200 bold text-uppercase color-accent-1">About us</div>
+                                </div>
+                                <h2>Our company started back <span class="text-no-wrap">in 2016</span></h2>
+                                <p class="mg-bottom-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Story Item 2: Our Mission -->
+                        <div class="w-layout-grid grid-2-columns text-left-default">
+                            <div class="inner-container _533px width-100-tablet">
+                                <div class="mg-bottom-12px">
+                                    <div class="text-200 bold text-uppercase color-accent-1">Our mission</div>
+                                </div>
+                                <h2>Our mission is to disrupt the <span class="text-no-wrap">food industry</span></h2>
+                                <div class="inner-container _480px width-100-tablet">
+                                    <p class="mg-bottom-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut <span class="text-no-wrap">odit aut fugit.</span></p>
+                                </div>
+                            </div>
+                            <div class="image-wrapper overflow-hidden border-radius-24px shadow-04">
+                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ef5a81a9f9bf7b9e9_image-1-stoy-about-delivery-template.jpg" 
+                                     alt="Disrupt The Food Industry - Deliver X Webflow Template" 
+                                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 680px, (max-width: 1439px) 47vw, 597.734375px"
+                                     srcset="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ef5a81a9f9bf7b9e9_image-1-stoy-about-delivery-template-p-500.jpeg 500w, https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ef5a81a9f9bf7b9e9_image-1-stoy-about-delivery-template-p-800.jpeg 800w, https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ef5a81a9f9bf7b9e9_image-1-stoy-about-delivery-template-p-1080.jpeg 1080w, https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ef5a81a9f9bf7b9e9_image-1-stoy-about-delivery-template.jpg 1196w"
+                                     class="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Journey/Timeline Section -->
+        <section class="section _200px bg-neutral-200">
+            <div class="container-default w-container">
+                <div class="inner-container _680px-tablet center">
+                    <div class="w-layout-grid grid-2-columns _1-col-tablet gap-row-64px">
+                        
+                        <!-- Left Side: Sticky Content -->
+                        <div>
+                            <div class="position-sticky top-160px">
+                                <div class="inner-container _520px _100-tablet">
+                                    <div class="mg-bottom-12px">
+                                        <div class="text-200 bold text-uppercase color-accent-1">Our journey</div>
+                                    </div>
+                                    <div class="inner-container _520px-tablet">
+                                        <div class="inner-container _400px-mbl">
+                                            <h2>It has been a long but incredible journey</h2>
+                                        </div>
+                                    </div>
+                                    <p class="mg-bottom-48px">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque <span class="text-no-wrap">ut quis.</span></p>
+                                    <div class="buttons-row">
+                                        <div class="btn-row-left">
+                                            <a href="/download" class="btn-primary w-button">Download app</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Side: Timeline -->
+                        <div class="inner-container _588px _100-tablet">
+                            <div class="w-layout-grid grid-1-column gap-row-40px">
+                                
+                                <!-- Timeline Item: 2016 -->
+                                <div>
+                                    <div class="card chronology">
+                                        <div class="mg-bottom-12px">
+                                            <div class="heading-h4-size color-accent-1">2016</div>
+                                        </div>
+                                        <h3 class="mg-bottom-32px">Deliver X was founded</h3>
+                                        <p class="mg-bottom-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo <span class="text-no-wrap">enim ipsam.</span></p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Timeline Item: 2018 -->
+                                <div>
+                                    <div class="card chronology">
+                                        <div class="mg-bottom-12px">
+                                            <div class="heading-h4-size color-accent-1">2018</div>
+                                        </div>
+                                        <h3 class="mg-bottom-32px">Raised Series A at $50M valuation</h3>
+                                        <p class="mg-bottom-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo <span class="text-no-wrap">enim ipsam.</span></p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Timeline Item: 2019 -->
+                                <div>
+                                    <div class="card chronology">
+                                        <div class="mg-bottom-12px">
+                                            <div class="heading-h4-size color-accent-1">2019</div>
+                                        </div>
+                                        <h3 class="mg-bottom-32px">Raised Series B at $600M valuation</h3>
+                                        <p class="mg-bottom-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo <span class="text-no-wrap">enim ipsam.</span></p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Timeline Item: 2022 -->
+                                <div>
+                                    <div class="card chronology">
+                                        <div class="mg-bottom-12px">
+                                            <div class="heading-h4-size color-accent-1">2022</div>
+                                        </div>
+                                        <h3 class="mg-bottom-32px">Raised Series C at $3B valuation</h3>
+                                        <p class="mg-bottom-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo <span class="text-no-wrap">enim ipsam.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Partners Section -->
+        <section class="section _200px">
+            <div class="container-default w-container">
+                <div class="mg-bottom-110px">
+                    <div class="inner-container _700px center">
+                        <div class="text-center">
+                            <div class="mg-bottom-12px">
+                                <div class="text-200 bold text-uppercase color-accent-1">Our Partners</div>
+                            </div>
+                            <h2>We don't walk alone, Deliver X works thanks to <span class="text-no-wrap">our partners</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque <span class="text-no-wrap">ut quis.</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-layout-grid grid-3-columns gap-row-80px _1-col-tablet">
+                    <!-- Partner 1: Customers -->
+                    <div class="inner-container _350px">
+                        <div class="text-center">
+                            <div class="mg-bottom-32px">
+                                <div class="inner-container _218px center responsive">
+                                    <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b070212f9403ca3a97f_image-1-partners-delivery-template.svg" 
+                                         alt="Customers - Deliver X Webflow Template">
+                                </div>
+                            </div>
+                            <h3 class="display-4 mg-bottom-16px">Customers</h3>
+                            <p class="mg-bottom-0">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam <span class="text-no-wrap">sit nullam.</span></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Partner 2: Restaurants -->
+                    <div class="inner-container _350px">
+                        <div class="text-center">
+                            <div class="mg-bottom-32px">
+                                <div class="inner-container _218px center responsive">
+                                    <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b07238dadda77c03341_image-2-partners-delivery-template.svg" 
+                                         alt="Restaurants - Deliver X Webflow Template">
+                                </div>
+                            </div>
+                            <h3 class="display-4 mg-bottom-16px">Restaurants</h3>
+                            <p class="mg-bottom-0">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam <span class="text-no-wrap">sit nullam.</span></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Partner 3: Riders -->
+                    <div class="inner-container _350px">
+                        <div class="text-center">
+                            <div class="mg-bottom-32px">
+                                <div class="inner-container _218px center responsive">
+                                    <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b075b917b7d28e88cc8_image-3-partners-delivery-template.svg" 
+                                         alt="Riders - Deliver X Webflow Template">
+                                </div>
+                            </div>
+                            <h3 class="display-4 mg-bottom-16px">Riders</h3>
+                            <p class="mg-bottom-0">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam <span class="text-no-wrap">sit nullam.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Press Section -->
+        <section class="section _200px bg-neutral-200">
+            <div class="container-default w-container">
+                <div class="inner-container _680px-tablet center">
+                    <div class="mg-bottom-64px">
+                        <div class="inner-container _620px center">
+                            <div class="text-center">
+                                <div class="mg-bottom-12px">
+                                    <div class="text-200 bold text-uppercase color-accent-1">Press & News</div>
+                                </div>
+                                <h2>See what the press says about <span class="text-no-wrap">Deliver X</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-layout-grid grid-2-columns _1-col-tablet">
+                        <!-- Press Card 1 -->
+                        <a href="https://webflow.com/" target="_blank" class="card press link-content w-inline-block">
+                            <div class="mg-bottom-26px">
+                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fab386a9117726aad8f_image-1-logo-press-delivery-template.svg" 
+                                     loading="eager" 
+                                     alt="What The Press Says About Our Company - Deliver X Webflow Template" 
+                                     class="image">
+                            </div>
+                            <h3 class="display-4 mg-bottom-24px">Deliver X raises $26M in series B funding <span class="text-no-wrap">for growth</span></h3>
+                            <div class="w-layout-grid grid-2-columns card-press-details">
+                                <div class="mg-right-24px">
+                                    <div class="link-wrapper color-primary text-bold no-hover">
+                                        <div class="link-text">Read more</div>
+                                        <div class="line-rounded-icon link-icon-right"></div>
+                                    </div>
+                                </div>
+                                <div class="text-300 medium">January 22, 2023</div>
+                            </div>
+                        </a>
+                        
+                        <!-- Press Card 2 -->
+                        <a href="https://webflow.com/" target="_blank" class="card press link-content w-inline-block">
+                            <div class="mg-bottom-26px">
+                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fac4a9181ff3e5b1fb1_image-3-logo-press-delivery-template.svg" 
+                                     loading="eager" 
+                                     alt="What The Press Says About Our Company - Deliver X Webflow Template" 
+                                     class="image">
+                            </div>
+                            <h3 class="display-4 mg-bottom-24px">Deliver X claims to be the #1 player in the delivery industry</h3>
+                            <div class="w-layout-grid grid-2-columns card-press-details">
+                                <div class="mg-right-24px">
+                                    <div class="link-wrapper color-primary text-bold no-hover">
+                                        <div class="link-text">Read more</div>
+                                        <div class="line-rounded-icon link-icon-right"></div>
+                                    </div>
+                                </div>
+                                <div class="text-300 medium">Nov 15, 2022</div>
+                            </div>
+                        </a>
+                        
+                        <!-- Press Card 3 -->
+                        <a href="https://webflow.com/" target="_blank" class="card press link-content w-inline-block">
+                            <div class="mg-bottom-26px">
+                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017facf5a81a3025f830c1_image-2-logo-press-delivery-template.svg" 
+                                     loading="eager" 
+                                     alt="What The Press Says About Our Company - Deliver X Webflow Template" 
+                                     class="image">
+                            </div>
+                            <h3 class="display-4 mg-bottom-24px">Introducing curbside ordering with <span class="text-no-wrap">Deliver X</span></h3>
+                            <div class="w-layout-grid grid-2-columns card-press-details">
+                                <div class="mg-right-24px">
+                                    <div class="link-wrapper color-primary text-bold no-hover">
+                                        <div class="link-text">Read more</div>
+                                        <div class="line-rounded-icon link-icon-right"></div>
+                                    </div>
+                                </div>
+                                <div class="text-300 medium">Sep 18, 2022</div>
+                            </div>
+                        </a>
+                        
+                        <!-- Press Card 4 -->
+                        <a href="https://webflow.com/" target="_blank" class="card press link-content w-inline-block">
+                            <div class="mg-bottom-26px">
+                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fab7168b306f912ea93_image-4-logo-press-delivery-template.svg" 
+                                     loading="eager" 
+                                     alt="What The Press Says About Our Company - Deliver X Webflow Template" 
+                                     class="image">
+                            </div>
+                            <h3 class="display-4 mg-bottom-24px">Introducing the Square POS integration with <span class="text-no-wrap">Deliver X</span></h3>
+                            <div class="w-layout-grid grid-2-columns card-press-details">
+                                <div class="mg-right-24px">
+                                    <div class="link-wrapper color-primary text-bold no-hover">
+                                        <div class="link-text">Read more</div>
+                                        <div class="line-rounded-icon link-icon-right"></div>
+                                    </div>
+                                </div>
+                                <div class="text-300 medium">Mar 12, 2022</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer-wrapper">
+            <div class="container-default w-container">
+                
+                <!-- Footer Top -->
+                <div class="footer-top">
+                    <div class="w-layout-grid grid-footer-2-column---logo-and-buttons">
+                        <div class="inner-container _450px">
+                            <a href="/home" class="footer-logo-wrapper w-inline-block">
+                                <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg" 
+                                     alt="Deliver X Webflow Template - Logo" 
+                                     class="footer-logo">
+                            </a>
+                            <p class="mg-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor <span class="text-no-wrap">incididunt ut.</span></p>
+                        </div>
+                        <div class="buttons-row download-app">
+                            <div class="btn-row-left download-app">
+                                <a href="https://www.apple.com/app-store/" target="_blank" class="btn-primary download-app w-inline-block">
+                                    <div class="custom-icon-font button-left apple"></div>
+                                    <div>Download for iOS</div>
+                                </a>
+                            </div>
+                            <div class="btn-row-right">
+                                <a href="https://play.google.com/" target="_blank" class="btn-primary download-app w-inline-block">
+                                    <div class="custom-icon-font button-left android"></div>
+                                    <div>Download for Android</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Middle -->
+                <div class="footer-middle">
+                    <div class="w-layout-grid grid-3-columns footer-nav-menu">
+                        
+                        <!-- Menu Column -->
+                        <div class="inner-container _230px">
+                            <div class="mg-bottom-40px">
+                                <div class="text-300 bold color-neutral-800">Menu</div>
+                            </div>
                             <div class="nav-menu-list-main-wrapper">
-                                <ul class="footer-links nav-menu-list-wrapper">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#" class="current">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Blog posts</a></li>
+                                <ul role="list" class="nav-menu-list-wrapper">
+                                    <li class="nav-menu-list-item">
+                                        <a href="/home" class="text-200 menu-nav-link">Home</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="/about" aria-current="page" class="text-200 menu-nav-link w--current">About</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="/contact" class="text-200 menu-nav-link">Contact</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="/blog" class="text-200 menu-nav-link">Blog</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="https://delivertemplate.webflow.io/blog/4-tips-to-increase-your-side-income-in-food-delivery" class="text-200 menu-nav-link">Blog posts</a>
+                                    </li>
                                 </ul>
-                                <ul class="footer-links nav-menu-list-wrapper last">
-                                    <li><a href="#">Plans</a></li>
-                                    <li><a href="#">Plan single</a></li>
-                                    <li><a href="#">Register</a></li>
+                                <ul role="list" class="nav-menu-list-wrapper last">
+                                    <li class="nav-menu-list-item">
+                                        <a href="/plans" class="text-200 menu-nav-link">Plans</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="https://delivertemplate.webflow.io/product/deluxe" class="text-200 menu-nav-link">Plan single</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="/download" class="text-200 menu-nav-link">Register</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="inner-container-230">
-                            <h6 class="footer-title">Utility pages</h6>
+                        
+                        <!-- Utility Pages Column -->
+                        <div class="inner-container _230px">
+                            <div class="mg-bottom-40px">
+                                <div class="text-300 bold color-neutral-800">Utility pages</div>
+                            </div>
                             <div class="nav-menu-list-main-wrapper">
-                                <ul class="footer-links nav-menu-list-wrapper last">
-                                    <li><a href="#">Start here</a></li>
-                                    <li><a href="#">Styleguide</a></li>
-                                    <li><a href="#">Password protected</a></li>
-                                    <li><a href="#">404 Not found</a></li>
-                                    <li><a href="#">Licenses</a></li>
-                                    <li><a href="#">Changelog</a></li>
-                                    <li><a href="#" class="special-link">Browse More Templates</a></li>
+                                <ul role="list" class="nav-menu-list-wrapper last">
+                                    <li class="nav-menu-list-item">
+                                        <a href="/template-pages/start-here" class="text-200 menu-nav-link">Start here</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="/template-pages/style-guide" class="text-200 menu-nav-link">Styleguide</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="https://delivertemplate.webflow.io/401" class="text-200 menu-nav-link">Password protected</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="https://delivertemplate.webflow.io/404" class="text-200 menu-nav-link">404 Not found</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="/template-pages/licenses" class="text-200 menu-nav-link">Licenses</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="/template-pages/changelog" class="text-200 menu-nav-link">Changelog</a>
+                                    </li>
+                                    <li class="nav-menu-list-item">
+                                        <a href="https://brixtemplates.com/more-webflow-templates" class="text-200 menu-nav-link special">Browse More Templates</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="inner-container-502">
-                            <h6 class="footer-title">Available in</h6>
-                            <div class="locations footer-country-available-service">
-                                <div class="location-item">
-                                    <div class="location-flag">
-                                        <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba8182905a8fd1c_icon-1-service-available-delivery-template.svg" alt="San Francisco - Deliver X Webflow Template" class="img-fluid">
+                        
+                        <!-- Available In Column -->
+                        <div class="inner-container _502px">
+                            <div class="mg-bottom-40px">
+                                <div class="text-300 bold color-neutral-800">Available in</div>
+                            </div>
+                            <div class="w-layout-grid grid-2-columns footer-country-available-service">
+                                <div class="flex-horizontal align-center">
+                                    <div class="mg-right-18px">
+                                        <div class="inner-container _78px width-100 responsive">
+                                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba8182905a8fd1c_icon-1-service-available-delivery-template.svg" 
+                                                 loading="eager" 
+                                                 alt="San Francisco - Deliver X Webflow Template" 
+                                                 class="image border-radius-24px responsive">
+                                        </div>
                                     </div>
-                                    <div class="location-name">San Francisco, CA</div>
+                                    <div class="heading-h5-size country-available">San Francisco, CA</div>
                                 </div>
-                                <div class="location-item">
-                                    <div class="location-flag">
-                                        <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba818a369a8fd1e_icon-2-service-available-delivery-template.svg" alt="New York - Deliver X Webflow Template" class="img-fluid">
+                                <div class="flex-horizontal align-center">
+                                    <div class="mg-right-18px">
+                                        <div class="inner-container _78px width-100 responsive">
+                                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba818a369a8fd1e_icon-2-service-available-delivery-template.svg" 
+                                                 loading="eager" 
+                                                 alt="New York - Deliver X Webflow Template" 
+                                                 class="image border-radius-24px responsive">
+                                        </div>
                                     </div>
-                                    <div class="location-name">New York, NY</div>
+                                    <div class="heading-h5-size country-available">New York, NY</div>
                                 </div>
-                                <div class="location-item">
-                                    <div class="location-flag">
-                                        <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35b08dbc7d63e9b3811_icon-3-service-available-delivery-template.svg" alt="Los Angeles - Deliver X Webflow Template" class="img-fluid">
+                                <div class="flex-horizontal align-center">
+                                    <div class="mg-right-18px">
+                                        <div class="inner-container _78px width-100 responsive">
+                                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35b08dbc7d63e9b3811_icon-3-service-available-delivery-template.svg" 
+                                                 loading="eager" 
+                                                 alt="Los Angeles - Deliver X Webflow Template" 
+                                                 class="image border-radius-24px responsive">
+                                        </div>
                                     </div>
-                                    <div class="location-name">Los Angeles, CA</div>
+                                    <div class="heading-h5-size country-available">Los Angeles, CA</div>
                                 </div>
-                                <div class="location-item">
-                                    <div class="location-flag">
-                                        <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35b80572eda7e5d0c79_icon-4-service-available-delivery-template.svg" alt="Seattle - Deliver X Webflow Template" class="img-fluid">
+                                <div class="flex-horizontal align-center">
+                                    <div class="mg-right-18px">
+                                        <div class="inner-container _78px width-100 responsive">
+                                            <img src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35b80572eda7e5d0c79_icon-4-service-available-delivery-template.svg" 
+                                                 loading="eager" 
+                                                 alt="Seattle - Deliver X Webflow Template" 
+                                                 class="image border-radius-24px responsive">
+                                        </div>
                                     </div>
-                                    <div class="location-name">Seattle, WA</div>
+                                    <div class="heading-h5-size country-available">Seattle, WA</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p class="mg-bottom-0">Copyright © Deliver X | Developed with ❤️ for the Frontend UI Developer Assessment by <a href="https://github.com/dhean4" target="_blank" class="text-decoration-none">Dhean4</a> - Powered by <a href="https://vercel.com/" target="_blank" class="text-decoration-none">vercel</a></p>
+                </div>
             </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <p class="copyright">Copyright © Deliver X | Designed by <a href="https://brixtemplates.com/" target="_blank" class="footer-link">BRIX Templates</a> - Powered by <a href="https://webflow.com/" target="_blank" class="footer-link">Webflow</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
+        </footer>
+        
+    </div>
+    <!-- End of Page Wrapper -->
+    
+    <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- GSAP -->
+    
+    <!-- GSAP Core -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- GSAP ScrollTrigger Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
+    
+    <!-- Custom JavaScript with GSAP Animations -->
+    <script src="js/animations.js"></script>
+    
 </body>
-</html>
+</html
