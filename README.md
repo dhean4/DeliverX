@@ -1,6 +1,6 @@
 # DeliverX - Modern Delivery Service Website
 
-A pixel-perfect replica of a modern delivery service website built with HTML, Bootstrap, SCSS, and GSAP animations.
+A pixel-perfect replica of a modern delivery service about us page built with HTML, Bootstrap, SCSS, and GSAP animations.
 
 ## Features
 
@@ -48,7 +48,7 @@ deliverx/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/dhean4/DeliverX)
 cd deliverx
 ```
 
