@@ -48,7 +48,7 @@ deliverx/
 
 1. Clone the repository:
 ```bash
-git clone [<repository-url>](https://github.com/dhean4/DeliverX)
+git clone https://github.com/dhean4/DeliverX
 cd deliverx
 ```
 
@@ -116,4 +116,4 @@ This project is licensed under the ISC License.
 
 ## Contact
 
-For questions or support, please contact @dhean4.
+For questions or support, please contact [Daniel](https://github.com/dhean4) or email at danielibisagba@gmail.com
