@@ -1,0 +1,180 @@
+// ==========================================
+// MIXINS
+// ==========================================
+// Reusable SCSS mixins for common patterns
+
+// Responsive breakpoints
+@mixin mobile {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media screen and (max-width: $breakpoint-landscape) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (max-width: $breakpoint-large) {
+    @content;
+  }
+}
+
+// Flexbox mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Typography
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin heading-base {
+  font-family: $font-primary;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Button base
+@mixin button-base {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: $border-radius-full;
+  font-size: $font-size-300;
+  font-weight: $font-weight-semibold;
+  line-height: 1.6;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition-base;
+  border: 2px solid transparent;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Card base
+@mixin card-base {
+  background-color: $color-white;
+  border-radius: $border-radius-16px;
+  padding: $spacing-32px;
+  box-shadow: $shadow-04;
+  transition: $transition-base;
+}
+
+// Input base
+@mixin input-base {
+  width: 100%;
+  padding: 14px 20px;
+  border: 2px solid $color-neutral-300;
+  border-radius: $border-radius-8px;
+  font-size: $font-size-300;
+  line-height: 1.6;
+  transition: $transition-base;
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+  }
+
+  &::placeholder {
+    color: $color-neutral-500;
+  }
+}
+
+// Position absolute center
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Clearfix
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Hide scrollbar
+@mixin hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// Transition
+@mixin transition($properties...) {
+  transition-property: $properties;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+// Box shadow
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+// Border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Transform
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}

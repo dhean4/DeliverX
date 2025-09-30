@@ -131,32 +131,50 @@ document.addEventListener('DOMContentLoaded', function() {
             ease: 'power3.out'
         });
 
-        // Counter animation for numbers
+        // Counter animation for numbers - IMPROVED VERSION
         const numberElement = stat.querySelector('.display-2');
         if (numberElement) {
-            const text = numberElement.textContent;
+            const text = numberElement.innerHTML; // Use innerHTML to preserve HTML
             const numberMatch = text.match(/[\d.]+/);
             
             if (numberMatch) {
                 const finalNumber = parseFloat(numberMatch[0]);
-                const suffix = text.replace(numberMatch[0], '');
+                // Extract everything after the number (including span tags)
+                const suffix = text.substring(text.indexOf(numberMatch[0]) + numberMatch[0].length);
+                
+                // Set initial state to final value (no animation from 0)
+                numberElement.innerHTML = numberMatch[0] + suffix;
+                
+                // Animate from 0 to final number
+                let hasAnimated = false;
                 
                 ScrollTrigger.create({
                     trigger: stat,
                     start: 'top 85%',
                     onEnter: () => {
-                        gsap.from({ value: 0 }, {
-                            duration: 2,
-                            value: finalNumber,
-                            ease: 'power2.out',
-                            onUpdate: function() {
-                                if (finalNumber >= 100) {
-                                    numberElement.textContent = Math.floor(this.targets()[0].value) + suffix;
-                                } else {
-                                    numberElement.textContent = this.targets()[0].value.toFixed(1) + suffix;
+                        if (!hasAnimated) {
+                            hasAnimated = true;
+                            gsap.from({ value: 0 }, {
+                                duration: 2,
+                                value: finalNumber,
+                                ease: 'power2.out',
+                                onUpdate: function() {
+                                    let currentValue;
+                                    if (finalNumber >= 100) {
+                                        currentValue = Math.floor(this.targets()[0].value);
+                                    } else if (finalNumber >= 10) {
+                                        currentValue = this.targets()[0].value.toFixed(1);
+                                    } else {
+                                        currentValue = this.targets()[0].value.toFixed(1);
+                                    }
+                                    numberElement.innerHTML = currentValue + suffix;
+                                },
+                                onComplete: function() {
+                                    // Ensure final value is exact
+                                    numberElement.innerHTML = numberMatch[0] + suffix;
                                 }
-                            }
-                        });
+                            });
+                        }
                     }
                 });
             }
@@ -504,27 +522,140 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const hamburger = document.querySelector('.hamburger-menu-wrapper');
     const mobileMenu = document.querySelector('.header-nav-menu-wrapper');
+    const navOverlay = document.querySelector('.w-nav-overlay');
     
     if (hamburger && mobileMenu) {
-        hamburger.addEventListener('click', function() {
+        // Set initial state for mobile menu
+        if (window.innerWidth <= 991) {
+            gsap.set(mobileMenu, { 
+                display: 'none',
+                opacity: 0,
+                height: 0 
+            });
+        }
+        
+        hamburger.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
             this.classList.toggle('active');
             
             if (this.classList.contains('active')) {
                 // Open menu
+                gsap.set(mobileMenu, { display: 'block' });
                 gsap.to(mobileMenu, {
                     duration: 0.4,
                     height: 'auto',
                     opacity: 1,
                     ease: 'power3.out'
                 });
+                
+                // Animate hamburger bars
+                gsap.to('.hamburger-menu-bar.top', {
+                    duration: 0.3,
+                    rotation: 45,
+                    y: 8,
+                    ease: 'power2.out'
+                });
+                gsap.to('.hamburger-menu-bar.bottom', {
+                    duration: 0.3,
+                    rotation: -45,
+                    y: -8,
+                    ease: 'power2.out'
+                });
+                
+                // Show overlay if it exists
+                if (navOverlay) {
+                    gsap.set(navOverlay, { display: 'block' });
+                    gsap.to(navOverlay, {
+                        duration: 0.3,
+                        opacity: 1
+                    });
+                }
             } else {
                 // Close menu
                 gsap.to(mobileMenu, {
                     duration: 0.3,
                     height: 0,
                     opacity: 0,
-                    ease: 'power3.in'
+                    ease: 'power3.in',
+                    onComplete: () => {
+                        gsap.set(mobileMenu, { display: 'none' });
+                    }
                 });
+                
+                // Reset hamburger bars
+                gsap.to('.hamburger-menu-bar.top', {
+                    duration: 0.3,
+                    rotation: 0,
+                    y: 0,
+                    ease: 'power2.out'
+                });
+                gsap.to('.hamburger-menu-bar.bottom', {
+                    duration: 0.3,
+                    rotation: 0,
+                    y: 0,
+                    ease: 'power2.out'
+                });
+                
+                // Hide overlay
+                if (navOverlay) {
+                    gsap.to(navOverlay, {
+                        duration: 0.3,
+                        opacity: 0,
+                        onComplete: () => {
+                            gsap.set(navOverlay, { display: 'none' });
+                        }
+                    });
+                }
+            }
+        });
+        
+        // Close menu when clicking on overlay
+        if (navOverlay) {
+            navOverlay.addEventListener('click', function() {
+                if (hamburger.classList.contains('active')) {
+                    hamburger.click();
+                }
+            });
+        }
+        
+        // Close menu when clicking on a nav link
+        const navLinks = mobileMenu.querySelectorAll('.header-nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (hamburger.classList.contains('active') && window.innerWidth <= 991) {
+                    hamburger.click();
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 991) {
+                // Desktop: ensure menu is visible
+                gsap.set(mobileMenu, { 
+                    display: 'block',
+                    opacity: 1,
+                    height: 'auto' 
+                });
+                hamburger.classList.remove('active');
+                gsap.set(['.hamburger-menu-bar.top', '.hamburger-menu-bar.bottom'], {
+                    rotation: 0,
+                    y: 0
+                });
+                if (navOverlay) {
+                    gsap.set(navOverlay, { display: 'none', opacity: 0 });
+                }
+            } else {
+                // Mobile: hide menu if not active
+                if (!hamburger.classList.contains('active')) {
+                    gsap.set(mobileMenu, { 
+                        display: 'none',
+                        opacity: 0,
+                        height: 0 
+                    });
+                }
             }
         });
     }

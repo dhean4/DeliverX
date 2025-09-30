@@ -1,0 +1,14 @@
+// ==========================================
+// MAIN STYLES FILE
+// ==========================================
+// This is the main SCSS file that imports all partials
+// and compiles into css/styles.css
+
+// Import variables (must be first)
+@use 'variables' as *;
+
+// Import mixins
+@use 'mixins' as *;
+
+// Import Webflow normalize and base styles
+@import 'webflow-normalize';

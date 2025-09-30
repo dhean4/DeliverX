@@ -24,11 +24,14 @@ A pixel-perfect replica of a modern delivery service website built with HTML, Bo
 deliverx/
 ├── index.html          # Main HTML file
 ├── scss/
-│   └── styles.scss     # SCSS source file
+│   ├── styles.scss              # Main SCSS file (entry point)
+│   ├── _variables.scss          # SCSS variables
+│   ├── _mixins.scss             # SCSS mixins
+│   └── _webflow-normalize.scss  # Base styles
 ├── css/
 │   └── styles.css      # Compiled CSS file
 ├── js/
-│   └── scripts.js      # JavaScript animations and interactions
+│   └── animations.js   # JavaScript animations and interactions
 ├── package.json        # Node.js dependencies and scripts
 ├── vercel.json         # Vercel deployment configuration
 └── README.md           # Project documentation
@@ -113,4 +116,4 @@ This project is licensed under the ISC License.
 
 ## Contact
 
-For questions or support, please contact the DeliverX team.
+For questions or support, please contact @dhean4.

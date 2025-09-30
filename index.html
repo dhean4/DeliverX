@@ -12,11 +12,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Webflow CSS (Downloaded) -->
-    <link rel="stylesheet" href="css/deliver-template-styles.css">
-    
-    <!-- Custom SCSS compiled to CSS -->
-    <link rel="stylesheet" href="css/new-style.css">
+    <link rel="stylesheet" href="css/styles.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,6 +64,15 @@
                                     </li>
                                 </ul>
                             </nav>
+                            
+                            <!-- Cart Button -->
+                            <div data-node-type="commerce-cart-wrapper" class="w-commerce-commercecartwrapper cart">
+                                <a href="#" class="w-commerce-commercecartopenlink header-nav-link cart-btn w-inline-block" role="button" aria-label="Open cart">
+                                    <div class="w-inline-block">Cart(</div>
+                                    <div class="w-commerce-commercecartopenlinkcount cart-quantity">0</div>
+                                    <div>)</div>
+                                </a>
+                            </div>
                             
                             <!-- Header Buttons -->
                             <div class="buttons-row header">

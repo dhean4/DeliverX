@@ -4,9 +4,10 @@
   "description": "DeliverX - Modern delivery service website",
   "main": "index.js",
   "scripts": {
-    "build": "sass scss/styles.scss css/styles.css",
+    "build": "sass scss/styles.scss css/styles.css --no-source-map",
+    "build:compressed": "sass scss/styles.scss css/styles.css --style=compressed --no-source-map",
     "watch": "sass --watch scss/styles.scss:css/styles.css",
-    "dev": "sass --watch scss/styles.scss:css/styles.css & python -m http.server 8000",
+    "dev": "sass --watch scss/styles.scss:css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["delivery", "logistics", "website", "bootstrap", "gsap"],
